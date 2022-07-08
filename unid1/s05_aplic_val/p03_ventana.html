@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilosTema5.css">
+	<script src="js/arrayAlumnos.js"></script>
+	<script src="js/form03funcion.js"></script>
+</head>
+<body>
+	<h1>Aplicación 3 - Ventanas</h1>
+	<div id="content">
+	<script>
+		 var valor = prompt("¿Cuántos estudiantes de ambos TURNOS desea ver?", "1");
+		if(valor > 0 && valor <= alumnos.length)
+		{
+			for (var i = 0; i < valor; i++){
+					num = alumnos[i][0];
+        			nom = alumnos[i][1];
+        			ape = alumnos[i][2];
+        			tur = fnTurno(alumnos[i][3]);
+					gen = fnGenero(alumnos[i][4]);
+        			res = " (" +(i+1) + "/" + alumnos.length +")";
+
+					fnGenerarTabla(res,num,nom,ape,tur);
+
+				function fnTurno(turno)
+				{ 
+    				switch(turno)
+     				{       
+                     
+         				case 'M': return "Dia";break;
+         				case 'N': return "Noche";break;
+         				default:  return "???";break;
+     				}
+				}	
+				function fnGenero(genero)
+				{ 
+    				switch(genero)
+     				{       
+                     
+         				case 'M': return "Masculino";break;
+         				case 'F': return "Femenino";break;
+         				default:  return "???";break;
+     				}
+				}
+
+        			
+					document.write(`
+			
+			<table border="1">
+			<tr>
+				<th colspan="4">Formulario ${num} de ${alumnos.length} </th>
+		<!--	<td></td> -->
+			</tr>
+			<tr>
+				<td id='tdIzq'>Nombres y Apellidos: </td>
+				<td rowspan="4"><img src="img/f${num}.jpg"></td>
+				<td id='tdDer' >Turno:</td>
+				<td id='tdDer' >Genero:</td>				
+			</tr>
+			<tr>
+				<td id='tdIzq'>${nom} ${ape} </td>
+				<td id='tdDer' >${tur}  </td>
+				<td id='tdDer' >${gen}  </td>
+			</tr>
+
+			</table><br>
+
+			`);
+
+
+				}
+			}else{
+    			alert("Solo se tiene registrado "+alumnos.length+" alumnos");
+    			document.writeln("<h2>Intentelo nuevamente ...</h2>");
+			}
+
+			
+	</script>
+	</div>
+</body>
+</html>

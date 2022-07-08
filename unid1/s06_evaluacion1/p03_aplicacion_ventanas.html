@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilosEval1.css">
+	<script src="js/arrayAlumnos.js"></script>
+	<script src="js/form03funcion.js"></script>
+</head>
+<body>
+	<h1>Aplicación 3 - Ventanas y tablas</h1>
+	<div id="content" class="principal" id="cont-princ" >
+	<script>
+		var valor = prompt("¿Cuántos estudiantes de ambos TURNOS desea ver?", "1");
+		if(valor > 0 && valor <= alumnos.length)
+		{
+			for (var i = 0; i < valor; i++){
+					num = alumnos[i][0];
+        			nom = alumnos[i][1];
+        			ape = alumnos[i][2];
+        			tur = fnTurno(alumnos[i][3]);
+        			gen = fnGenero(alumnos[i][4]);
+        			res = " (" +(i+1) + "/" + alumnos.length +")";
+        			fnGenerarTabla(res,num,nom,ape,tur,gen);
+				}
+			}else{
+    			alert("Solo alumnos registrados son:"+alumnos.length);
+    			document.writeln("<h2>Intentar nuevamente ...se permite del 1 al 18</h2>");
+			}
+
+			function fnGenerarTabla(res,num,nom,ape,tur,gen)
+			{	
+					document.write("<table>");
+					///// Datos personales "res" es el numero de indicado de cada alumno
+					document.write("<tr>");
+						document.write("<th class='titulo' colspan= '4'>Datos personales"+res+"</th>");
+					document.write("</tr>");
+
+					////// Nombres y Apellidos e Imagen "nom" + "ape" y se crea una fila para la "img"
+					document.write("<tr>");	
+						document.write("<td rowspan='3'><img src='img/f"+num+".jpg'></td>");	
+						document.write("<td id='tdIzq'>Nombres y Apellidos: </td><td id='tdDer'>"+nom+" "+ ape+"</td>");						
+					document.write("</tr>");
+
+					////// Turno "tur"
+					document.write("<tr>");
+						document.write("<td id='tdIzq'>Turno: </td><td id='tdDer'>"+tur+"</td>");
+					document.write("</tr>");
+
+					////// Genero "gen"
+					document.write("<tr>");		
+    				    document.write("<td id='tdIzq'>Género: </td><td id='tdDer'>"+ gen +"</td>");
+   				 				document.write("</tr>");
+					document.write("</table><br>");
+			}		
+	</script>
+	</div>	
+</body>
+</html>

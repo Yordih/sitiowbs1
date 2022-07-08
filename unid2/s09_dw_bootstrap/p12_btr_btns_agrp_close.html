@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>botones</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container p-3 border border-primary">
+		<h1 style="text-align: center;">Botones</h1>
+
+		<div class="container p-3 border border-dark">
+			<button href="#" role="button" class="btn btn-primary">Enlace</button>
+			<button type="button" class="btn btn-primary">Botón</button>
+			<button type="submit" class="btn btn-success">Enviar</button>
+			<button type="button" class="btn btn-info">Entrada</button>
+			<button type="reset" class="btn btn-warning">Reset</button>
+			
+		</div>
+
+		<div class="container p-3 border border-dark">
+			<button type="button" class="btn btn-outline-secondary">Secundario</button>		
+			<button type="button" class="btn btn-outline-success">Éxito</button>
+			<button type="button" class="btn btn-outline-danger">Peligro</button>
+			<button type="button" class="btn btn-outline-warning">Advertencia</button>
+			<button type="button" class="btn btn-outline-info">Información</button>
+			<button type="button" class="btn btn-outline-dark">Oscuro</button>
+		</div>
+
+		<div class="container p-3 border border-dark">
+			<button type="button" class="btn btn-primary btn-lg">Botón grande</button>
+			<button type="button" class="btn btn-secondary btn-sm">Botón pequeño</button>
+			<button type="button" class="btn btn-lg btn-primary" disabled>Botón Principal</button>
+		</div>
+
+		<div class="d-grid gap-2 p-3 border border-dark">
+			<button class="btn btn-primary" type="button">Button</button>
+		</div>
+
+		<div class="d-grid gap-2 col-6 mx-auto p-3 border border-dark">
+			<button class="btn btn-primary" type="button">Button</button>
+		</div>
+
+		<div class="d-grid gap-2 d-md-flex justify-content-md-end p-3 border border-dark">
+			<button class="btn btn-primary me-md-2" type="button">Button</button>
+			<button class="btn btn-primary" type="button">Button</button>
+		</div>
+	</div>
+
+	<div class="container my-4 p-3 border border-primary">
+		<h1 style="text-align: center;">Grupo de Botones</h1>>
+
+		<div class="container p-3 border border-dark">
+			<div class="btn-group">
+				<a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
+				<a href="#" class="btn btn-primary">Link</a>
+				<a href="#" class="btn btn-primary">Link</a>
+			</div>
+		</div>
+
+		<div class="container p-3 border border-dark">
+			<div class="btn-group" role="group" aria-label="Basic mixed styles example">
+				<button type="button" class="btn btn-danger">Left</button>
+				<button type="button" class="btn btn-warning">Middle</button>
+				<button type="button" class="btn btn-success">Right</button>
+			</div>
+		</div>
+
+		<div class="container p-3 border border-dark">
+			<div class="btn-group" role="group" aria-label="Basic outlined example">
+				<button type="button" class="btn btn-outline-primary">Left</button>
+				<button type="button" class="btn btn-outline-primary">Middle</button>
+				<button type="button" class="btn btn-outline-primary">Right</button>
+			</div>
+		</div>
+
+		<div class="container p-3 border border-dark">
+			<div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+				<input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+				<label class="btn btn-outline-primary" for="btncheck1">Checkbox 1</label>
+			  
+				<input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+				<label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+			  
+				<input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+				<label class="btn btn-outline-primary" for="btncheck3">Checkbox 3</label>
+			</div>
+		</div>
+
+		<div class="container p-3 border border-dark">
+			<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+				<div class="btn-group me-2" role="group" aria-label="First group">
+				  <button type="button" class="btn btn-primary">1</button>
+				  <button type="button" class="btn btn-primary">2</button>
+				  <button type="button" class="btn btn-primary">3</button>
+				  <button type="button" class="btn btn-primary">4</button>
+				</div>
+				<div class="btn-group me-2" role="group" aria-label="Second group">
+				  <button type="button" class="btn btn-secondary">5</button>
+				  <button type="button" class="btn btn-secondary">6</button>
+				  <button type="button" class="btn btn-secondary">7</button>
+				</div>
+				<div class="btn-group" role="group" aria-label="Third group">
+				  <button type="button" class="btn btn-info">8</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="container p-3 border border-dark">
+			<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+				<button type="button" class="btn btn-primary">1</button>
+				<button type="button" class="btn btn-primary">2</button>
+			  
+				<div class="btn-group" role="group">
+				  <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					Dropdown
+				  </button>
+				  <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+					<li><a class="dropdown-item" href="#">Dropdown link</a></li>
+					<li><a class="dropdown-item" href="#">Dropdown link</a></li>
+				  </ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="container p-3 border border-dark">
+			<div class="btn-group-vertical">
+				<div class="btn-group" role="group">
+					<button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					  Dropdown
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+					  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+					  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+					</ul>
+				</div>
+
+				<div class="btn-group" role="group">
+					<button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					  Dropdown
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+					  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+					  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+					</ul>
+				</div>
+
+				<div class="btn-group" role="group">
+					<button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					  Dropdown
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+					  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+					  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+					</ul>
+				</div>
+
+				<div class="btn-group" role="group">
+					<button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					  Dropdown
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+					  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+					  <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

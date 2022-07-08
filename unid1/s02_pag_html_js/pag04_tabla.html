@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura HTML5</title>
+    <style>
+        td{background-color: aqua;}
+        #xBorde{border: 3px dashed orange;}
+        .xForma{font-size: 32px; color: bisque;}
+    </style>
+</head>
+<body bgcolor="yellow">
+    <h1>Tabla 3 x 4</h1>
+
+    <table border="1">
+        <tr>
+            <td colspan="4">Fila1_Clumna1</td>
+  <!--      <td>Fila1_Clumna2</td>
+            <td>Fila1_Clumna3</td>
+            <td>Fila1_Clumna4</td>            -->
+        </tr>
+        <tr>
+            <td class="xForma" id="xBorde">Fila2_Clumna1</td>
+            <td rowspan="2">Fila2_Clumna2</td>
+            <td id="xBorde">Fila2_Clumna3</td>
+            <td >Fila2_Clumna4</td>            
+        </tr>
+        <tr>
+            <td class="xForma" id="xBorde">Fila3_Clumna1</td>
+<!--            <td>Fila3_Clumna2</td> -->
+            <td>Fila3_Clumna3</td>
+            <td>Fila3_Clumna4</td>            
+        </tr>
+    </table>
+</body>
+</html>
